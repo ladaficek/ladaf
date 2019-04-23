@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8.C</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="Loginbox"><br>
+		<h1>
+		Jméno
+	<input name="username" id="username" type="text" placeholder="Jméno">
+	Heslo
+	<input name="pass" id="pass" type="password" placeholder="Heslo">
+	<input type="submit" value="Přihlásit se" onclick="login()">
+		</h1>
+	</div>
+	<script>
+function login(){
+  var user = document.getElementById("username").value;
+  var pass = document.getElementById("pass").value;
+
+if(user == "lada" && pass == "lada"){
+            window.location.href="8.cmain.html"
+        alert("uspesne prihlasen");
+   }else{
+    alert("Špatné heslo nebo jméno");
+    }
+	
+}
+	</script>
+</body>
+</html>
