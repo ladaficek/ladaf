@@ -1,12 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>)
-	<script type="text/javascript" src="script.js">
-	<title>Hello there</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-		<p>Instalogin code</p>
-		<button onclick="instalog()" placeholder="Enter code"></button>
-</body>
+  <main>
+  </main>
+  <body>
+    <p>Instalogin code</p>
+    <p id="hide" style="display: none;">Hi</p>
+  	<input id="instalog">
+    <button  onclick="instalog()">Enter</button>
+    <script>
+      function instalog(){
+        var code = document.getElementById("instalog").value ;
+        if(code = "l4d4"){
+          document.getElementById("hide").style.display = "block" ;
+        }
+      }
+      
+      
+    </script>
+  </body>
+  
 </html>
